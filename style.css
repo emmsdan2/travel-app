@@ -1,4 +1,238 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Google+Sans|Poppins|Volkhov&display=swap');
+
+
+* {
   margin: 0;
-  padding: 0
+  padding: 0;
+  box-sizing: border-box;
+  color: #212832;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 4.5rem 12rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Google Sans;
+gap:20px;
+}
+
+.logo img {
+  height: auto;
+  width: auto;
+  max-height: 34px;
+}
+
+
+.nav-links,
+.nav-actions {
+  list-style: none;
+  display: flex;
+ flex-wrap: wrap; 
+  gap: 20px;
+  font-weight: 500;
+
+}
+
+.nav-links {
+  margin-left: 150px;
+  gap: 40px;
+}
+
+.nav-links a,
+.nav-actions a {
+  text-decoration: none;
+  color: #333;
+  font-size: 17px;
+  font-weight: 500;
+
+}
+
+.sign-up-btn {
+  border: 1px solid #333;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 40px;
+}
+
+.hero-content {
+  margin: 60px 0;
+
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+
+
+}
+
+.destinations-tagline {
+  color: #DF6951;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+
+}
+
+.hero-content h1 {
+  color: #181E4B;
+  font-family: Volkhov;
+  font-size: 4vw;
+  line-height: 110%;
+  font-weight: 700;
+  letter-spacing: -3px;
+
+}
+
+.underline {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+
+.underline::after {
+  content: '';
+  display: block;
+  width: 150%;
+  height: 12px;
+  background-image: url('Decore.svg');
+  background-repeat: no-repeat;
+  background-size: 120% 100%;
+  position: absolute;
+  bottom: 1.5px;
+  left: -12%;
+  z-index: -1;
+}
+
+.subhead {
+  max-width: 405px;
+  margin: 1rem 0 0 0;
+  color: #5E6282;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  font-family: Poppins;
+
+}
+
+button,
+.cta-btn,
+.play-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.cta-buttons {
+  display: flex;
+  align-items: center;
+gap:10px;
+}
+
+.cta-btn {
+
+  box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+  background-color: #F1A501;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 1em;
+  text-decoration: none;
+
+  font-family: Google Sans;
+}
+
+
+.play-btn {
+  background-color: transparent;
+  color: #686D77;
+  font-family: Poppins;
+  font-size: 1em;
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+
+.play-btn img {
+  width: 80px;
+  height: 80px;
+  margin-top: 15px;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    padding: 35px 80px;
+  }
+
+  .nav-links {
+    margin-left: 50px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    width: 100%;
+
+  }
+
+  .hero-content {
+    order: 2;
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+
+  }
+
+  .hero-image {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .cta-btn,
+  .play-btn {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+
+  .nav-links,
+  .nav-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    margin-left: 0;
+
+  }
+
+ 
+
+ 
 }
