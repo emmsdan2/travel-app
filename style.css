@@ -18,25 +18,27 @@ body {
   height: 100vh;
 }
 
-/* nav {
+nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   font-family: Google Sans;
 
-} */
+}
 
-/* .logo img {
+.logo img {
   height: auto;
   width: auto;
   max-height: 34px;
-} */
+}
 
 
-/* .nav-links,
+.nav-links,
 .nav-actions {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   font-weight: 500;
 
@@ -44,7 +46,7 @@ body {
 
 .nav-links {
   margin-left: 150px;
-  gap: 30px;
+  gap: 50px;
 }
 
 .nav-links a,
@@ -54,7 +56,7 @@ body {
   font-size: 17px;
   font-weight: 500;
 
-} */
+}
 
 .sign-up-btn {
   border: 1px solid #333;
@@ -77,6 +79,7 @@ body {
 .hero-image img {
   max-width: 100%;
   height: auto;
+  margin-top: 50px;
 
 }
 
@@ -93,7 +96,7 @@ body {
 .hero-content h1 {
   color: #181E4B;
   font-family: Volkhov;
-  font-size: 6vw;
+  font-size: 4vw;
   line-height: 110%;
   font-weight: 700;
   letter-spacing: -3px;
@@ -219,7 +222,7 @@ button,
     font-size: 0.9em;
   }
 
-  /* .nav-links,
+  .nav-links,
   .nav-actions {
     flex-direction: column;
     align-items: center;
@@ -229,7 +232,7 @@ button,
   .nav-links {
     margin-left: 0;
 
-  } */
+  }
 
   .cta-btn,
   .play-btn {
